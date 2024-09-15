@@ -88,7 +88,7 @@ const Contact = () => {
               name="firstName"
               value={formData.firstName}
               onChange={handleForm}
-              className="text-white focus:outline-none p-2 rounded-md  bg-[#dfe4fc]"
+              className="text-black focus:outline-none p-2 rounded-md  bg-[#dfe4fc]"
               placeholder="First Name"
               required
             />
@@ -97,7 +97,7 @@ const Contact = () => {
               name="lastName"
               value={formData.lastName}
               onChange={handleForm}
-              className="text-white focus:outline-none p-2 rounded-md  bg-[#dfe4fc]"
+              className="text-black focus:outline-none p-2 rounded-md  bg-[#dfe4fc]"
               placeholder="Last Name"
             />
           </div>
@@ -107,7 +107,7 @@ const Contact = () => {
             name="email"
             value={formData.email}
             onChange={handleForm}
-            className="text-white focus:outline-none p-2 rounded-md  bg-[#dfe4fc]"
+            className="text-black focus:outline-none p-2 rounded-md  bg-[#dfe4fc]"
             placeholder="Email"
             required
           />
@@ -116,7 +116,7 @@ const Contact = () => {
             name="message"
             value={formData.message}
             onChange={handleForm}
-            className="text-white focus:outline-none p-2 rounded-md  bg-[#dfe4fc]"
+            className="text-black focus:outline-none p-2 rounded-md  bg-[#dfe4fc]"
             placeholder="Any suggestions..."
             required
           />
