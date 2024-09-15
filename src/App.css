@@ -1,0 +1,209 @@
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display:400,700i,900i';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* font-family: 'Playfair Display', serif; */
+    /* color: rgba(172, 170, 190, 1); */
+    text-rendering: optimizeLegibility;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* background-color: #3b3d54; */
+    font-size: 14px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.wrap {
+    perspective-origin: 50% 50%;
+}
+
+.page {
+    margin: 3%;
+    /* max-width: 600px; */
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 1.4vw;
+}
+
+.page h2 {
+    font-weight: bold;
+    font-size: 6.5vw;
+    font-weight: 900;
+    font-style: italic;
+    color: #dad8ec;
+}
+
+.svg {
+    stroke: #7ceaa4;
+    position: absolute;
+    bottom: -100vh;
+    transform-style: preserve-3d;
+}
+
+.svg:nth-child(1) {
+    left: 40%;
+    animation: raise1 8s linear infinite;
+    animation-delay: 0s;
+    transform: scale(0.3) rotate(120deg);
+    z-index: -6;
+    filter: blur(-5px);
+}
+
+.svg:nth-child(2) {
+    left: 20%;
+    animation: raise2 12s linear infinite;
+    animation-delay: 1s;
+    transform: scale(0.6) rotate(250deg);
+    z-index: -5;
+    filter: blur(-4px);
+}
+
+.svg:nth-child(3) {
+    left: 60%;
+    animation: raise3 10s linear infinite;
+    animation-delay: -1s;
+    transform: scale(0.9) rotate(180deg);
+    z-index: -4;
+    filter: blur(-3px);
+}
+
+.svg:nth-child(4) {
+    left: 80%;
+    animation: raise4 14s linear infinite;
+    animation-delay: 2s;
+    transform: scale(1.2) rotate(300deg);
+    z-index: -3;
+    filter: blur(-2px);
+}
+
+.svg:nth-child(5) {
+    left: 30%;
+    animation: raise5 15s linear infinite;
+    animation-delay: -3s;
+    transform: scale(1.5) rotate(90deg);
+    z-index: -2;
+    filter: blur(-1px);
+}
+
+.svg:nth-child(6) {
+    left: 10%;
+    animation: raise6 18s linear infinite;
+    animation-delay: 3s;
+    transform: scale(1.8) rotate(60deg);
+    z-index: -1;
+    filter: blur(0px);
+}
+
+.svg:nth-child(7) {
+    left: 50%;
+    animation: raise7 20s linear infinite;
+    animation-delay: -2s;
+    transform: scale(2.1) rotate(120deg);
+    z-index: 0;
+    filter: blur(1px);
+}
+
+.svg:nth-child(8) {
+    left: 70%;
+    animation: raise8 16s linear infinite;
+    animation-delay: 4s;
+    transform: scale(2.4) rotate(240deg);
+    z-index: 1;
+    filter: blur(2px);
+}
+
+.svg:nth-child(9) {
+    left: 90%;
+    animation: raise9 22s linear infinite;
+    animation-delay: -4s;
+    transform: scale(2.7) rotate(30deg);
+    z-index: 2;
+    filter: blur(3px);
+}
+
+.svg:nth-child(10) {
+    left: 40%;
+    animation: raise10 24s linear infinite;
+    animation-delay: 5s;
+    transform: scale(3) rotate(180deg);
+    z-index: 3;
+    filter: blur(4px);
+}
+
+/* Keyframes for each svg element */
+@keyframes raise1 {
+    to {
+        bottom: 150vh;
+        transform: scale(0.3) rotate(120deg);
+    }
+}
+
+@keyframes raise2 {
+    to {
+        bottom: 150vh;
+        transform: scale(0.6) rotate(250deg);
+    }
+}
+
+@keyframes raise3 {
+    to {
+        bottom: 150vh;
+        transform: scale(0.9) rotate(180deg);
+    }
+}
+
+@keyframes raise4 {
+    to {
+        bottom: 150vh;
+        transform: scale(1.2) rotate(300deg);
+    }
+}
+
+@keyframes raise5 {
+    to {
+        bottom: 150vh;
+        transform: scale(1.5) rotate(90deg);
+    }
+}
+
+@keyframes raise6 {
+    to {
+        bottom: 150vh;
+        transform: scale(1.8) rotate(60deg);
+    }
+}
+
+@keyframes raise7 {
+    to {
+        bottom: 150vh;
+        transform: scale(2.1) rotate(120deg);
+    }
+}
+
+@keyframes raise8 {
+    to {
+        bottom: 150vh;
+        transform: scale(2.4) rotate(240deg);
+    }
+}
+
+@keyframes raise9 {
+    to {
+        bottom: 150vh;
+        transform: scale(2.7) rotate(30deg);
+    }
+}
+
+@keyframes raise10 {
+    to {
+        bottom: 150vh;
+        transform: scale(3) rotate(180deg);
+    }
+}
