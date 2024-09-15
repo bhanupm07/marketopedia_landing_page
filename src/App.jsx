@@ -8,9 +8,15 @@ import Hero from "./components/Hero";
 function App() {
   return (
     <>
-      <main className=" text-white page bg-[url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')]">
-        <Header />
-        <Hero />
+      <main className="relative h-screen">
+        {/* Background image with blur */}
+        <div className="absolute inset-0 bg-[url('https://media.istockphoto.com/id/1487894858/photo/candlestick-chart-and-data-of-financial-market.jpg?s=1024x1024&w=is&k=20&c=AfDUACB1NMYPpuvEgEgQDUNt2rMuCsPoLnfH0LSYs1s=')] bg-no-repeat bg-cover bg-blend-multiply filter blur-sm"></div>
+
+        {/* Content on top */}
+        <div className="relative z-10">
+          <Header />
+          <Hero />
+        </div>
       </main>
       <About />
       <Contact />

@@ -66,7 +66,7 @@ const Contact = () => {
   return (
     <section className="min-h-[90vh] p-4 pb-6 Contact">
       <p
-        className="text-3xl text-[#5471FF] md:text-4xl font-bold text-center  pt-[40px] pb-[20px]"
+        className="text-3xl text-[#5471FF] md:text-4xl font-bold text-center pt-[90px] pb-[20px]"
         data-aos="fade-down"
       >
         Let's Connect
